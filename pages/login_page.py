@@ -10,7 +10,7 @@ class LoginPage(BasePage):
 
     def should_be_login_url(self):
         self.open()
-        assert "login1" in self.url, "Не правильный URL"
+        assert "login" in self.browser.current_url, "Не правильный URL"
 
     def should_be_login_form(self):
         self.open()
